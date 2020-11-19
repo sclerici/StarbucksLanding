@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+header .logo img{
+    width: 80%;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: #000;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.container .text-content{
+    position: relative;
+    max-width: 45%;
+    margin: auto;
+    right: 50px;
+}
+
+.text-content h1{
+    font-size: 4em;
+    color: #343434;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+.text-content h1 span{
+    color: #0A8044;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.text-content p{
+    line-height: 1.4em;
+    font-weight: 500;
+    color: #343434;
+}
+
+.text-content a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0A8044;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 42px;
+    margin-top: 10px;
+}
+
+.glass img{
+    position: relative;
+    top: 75px;
+    right: 50px;
+    width: 72%;
+}
+
+aside{
+   display: flex;
+   justify-content: flex-end;
+}
+
+aside .socialmedia{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    margin-right: 30px;
+    filter: invert(1);
+}
+
+aside .socialmedia img{
+    margin-top: 20px;
+}
+
+.thumb{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.thumb ul li{
+    display: inline-block;
+    transform: translateX(35px);
+}
+
+.thumb ul li:hover{
+    transform: translateY(-50px)
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0A8044;
+    clip-path: circle(620px at right 800px);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px){
+    header{
+            justify-content: flex-start;
+        }
+        
+        nav ul li a{
+            margin-left: 30px;
+            font-size: 14px;
+        }
+
+        header .logo img{
+            width: 60%;
+        }
+        
+        .container .text-content{
+            max-width: 40%;
+            right: 0px;
+        }
+        
+        .text-content h1{
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+
+        .text-content p{
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .text-content a{
+            padding: 3px 14px;
+        }
+
+        .glass img{
+            position: relative;
+            top: 40px;
+            right: 50px;
+            width: 50%;
+        }
+        aside .socialmedia{
+            right: 215px;
+            transform: translateY(50px);
+        }
+        aside .socialmedia img{
+            margin-top: 20px;
+            width: 20px;
+        }
+        .thumb{
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .thumb ul li{
+            display: inline-block;
+            transform: translateX(-50px);
+        }
+        .circle{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 85vh;
+            height: 100vh;
+            background-color: #0A8044;
+            clip-path: circle(530px at right 800px);
+        }
+
+    }
+
+    @media screen and (max-width: 415px){
+        header{
+                justify-content: flex-start;
+            }
+
+            header nav ul li{
+               margin: 10px;
+            }
+            
+            nav ul li a{
+                margin-left: 0px;
+                font-size: 12px;
+            }
+    
+            header .logo img{
+                width: 50%;
+            }
+            
+            .container .text-content{
+                max-width: 50%;
+                right: 0px;
+                margin: 10px;
+            }
+            
+            .text-content h1{
+                font-size: 2em;
+                margin-top: 20px;
+            }
+    
+            .text-content p{
+                font-size: 13px;
+                max-width: 100%;
+            }
+    
+            .text-content a{
+                padding: 3px 12px;
+                font-size: 14px;
+            }
+    
+            .glass img{
+                position: relative;
+                top: 120px;
+                right: -20px;
+                width: 80%;
+            }
+            aside .socialmedia{
+                right: -20px;
+                transform: translateY(90px);
+            }
+            aside .socialmedia img{
+                margin-top: 20px;
+                width: 20px;
+            }
+            
+            .thumb ul li{
+                transform: translateY(40px);
+            }
+            .circle{
+                width: 100%;
+                height: 100%;
+                clip-path: circle(585px at right 950px);
+            
+            }
+            
+            }
+            @media screen and (max-width: 378px){
+                header{
+                        justify-content: flex-start;
+                    }
+        
+                    header nav ul li{
+                       margin: 5px;
+                    }
+
+                    .glass img{
+                        position: relative;
+                        top: 150px;
+                        right: 0px;
+                        width: 90%;
+                    }
+                    aside .socialmedia{
+                        right: -25px;
+                        transform: translateY(110px);
+                    }
+                    aside .socialmedia img{
+                        margin-top: 20px;
+                        width: 20px;
+                    }
+                    
+                    .thumb ul li{
+                        transform: translateY(60px);
+                    }
+                    .circle{
+                        width: 100%;
+                        height: 100%;
+                        clip-path: circle(500px at right 880px);
+                    
+                    }
+                    
+                    }
